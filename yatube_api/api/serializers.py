@@ -58,5 +58,5 @@ class FollowSerializer(serializers.ModelSerializer):
         if user == follow_obj:
             raise serializers.ValidationError(
                 "Нельзя подписаться на самого себя"
-                )
+            )
         return data
